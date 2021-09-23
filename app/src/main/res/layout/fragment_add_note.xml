@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddNoteFragment">
+    <EditText
+        android:hint="Title"
+        android:inputType="text"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/eT_title"
+        />
+
+    <EditText
+        android:gravity="center"
+        android:hint="Note"
+        android:layout_below="@+id/eT_title"
+        android:id="@+id/eT_note"
+        android:inputType="textMultiLine"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/eT_title"
+        android:layout_marginEnd="-2dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="661dp"
+        android:clickable="true"
+        android:src="@drawable/ic_done" />
+
+</RelativeLayout>
